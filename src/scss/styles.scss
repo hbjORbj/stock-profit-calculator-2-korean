@@ -1,0 +1,99 @@
+@import "_reset";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cormorant Garamond", sans-serif;
+  height: 80vh;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  h3 {
+    font-size: 40px;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .prices {
+    width: 30%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    .price_container {
+      display: flex;
+      width: 400px;
+      height: 60px;
+      div {
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .title {
+        align-self: flex-end;
+      }
+      .price {
+        margin-left: 15px;
+      }
+      div,
+      input {
+        font-family: "Cormorant Garamond", sans-serif;
+        font-size: 40px;
+        width: 60%;
+        line-height: 10px;
+        border: none;
+        background-color: transparent;
+        padding: 10px;
+        border-bottom: 1px solid black;
+      }
+      input {
+        outline: none;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .submit {
+      display: flex;
+      margin-top: 75px;
+      .increment {
+        margin-right: 10px;
+      }
+      a {
+        font-size: 27px;
+        color: black;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 20px;
+      }
+    }
+    .refresh {
+      margin-top: 80px;
+      a {
+        font-size: 27px;
+        color: black;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 20px;
+        border-radius: 100px;
+      }
+    }
+  }
+  .output_container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 60px;
+    }
+  }
+}
