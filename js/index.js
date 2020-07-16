@@ -1,5 +1,6 @@
 var profit_rate = 0.0;
 var rate = 1.005;
+
 function increment() {
   var buying_price = document.getElementById("buying_price").value;
   rate += 0.005;
