@@ -3,16 +3,6 @@
   "version": "1.0.0",
   "description": "Stock Profit Calculator 2 in Korean language",
   "main": "index.js",
-  "scripts": {
-    "dev": "gulp dev",
-    "build": "gulp build",
-    "deploy": "gulp deploy"
-  },
-  "browserslist": {
-    "browsers": [
-      "last 2 versions"
-    ]
-  },
   "author": "Benny Joo",
   "license": "ISC",
   "dependencies": {
@@ -30,5 +20,15 @@
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.12.0",
     "uglifyify": "^5.0.2"
+  },
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build",
+    "deploy": "gulp deploy"
+  },
+  "browserslist": {
+    "browsers": [
+      "last 2 versions"
+    ]
   }
 }
