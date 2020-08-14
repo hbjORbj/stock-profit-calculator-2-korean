@@ -4,7 +4,7 @@ function increment() {
   var buying_price = document.getElementById("buying_price").value;
   rate += 0.001;
   var selling_price = "$" + Math.round(buying_price * rate * 1000) / 1000;
-  profit_rate += 0.1;
+  profit_rate = Math.round((profit_rate + 0.1) * 10) / 10;
   document.getElementById("selling_price").textContent = selling_price;
   document.getElementById("profit_rate").textContent = profit_rate + "%";
 }
@@ -13,7 +13,7 @@ function decrement() {
   var buying_price = document.getElementById("buying_price").value;
   rate -= 0.001;
   var selling_price = "$" + Math.round(buying_price * rate * 1000) / 1000;
-  profit_rate -= 0.1;
+  profit_rate = Math.round((profit_rate - 0.1) * 10) / 10;
   document.getElementById("selling_price").textContent = selling_price;
   document.getElementById("profit_rate").textContent = profit_rate + "%";
 }
